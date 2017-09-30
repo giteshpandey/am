@@ -1,0 +1,29 @@
+<!-- <div class="question" contenteditable="true">
+	{{item.desc}}
+</div> -->	
+<ng-bind-html ng-bind-html="item.desc"></ng-bind-html>
+
+
+<div class="choices">
+	<div ng-show="(item.itemType === 'Text Input')">
+		
+	<form>
+        <div class="form-group">
+          <label for="assignmentName">Answer</label>
+          <textarea type="text" ng-model="item.answers[0]" class="form-control" placeholder="Enter your answer here..."/>
+        </div>      
+      </form>
+	</div>
+	<div ng-show="(item.itemType === 'Single Choice')">
+	<form name="options">
+		<div ng-repeat="(choiceKey, choiceValue) in item.itemChoices">
+			<input type="radio" ng-model="item.answers[0]" ng-value="choiceValue.desc" choice-id="choiceValue.id"> {{choiceValue.desc}}
+		</div>
+	</form>	
+	</div>
+		<div ng-show="(item.itemType === 'Multi Choice')">
+			<div ng-repeat="(choiceKey, choiceValue) in item.itemChoices">			
+				<input type="checkbox" ng-model="item.answers[choiceValue.id]"  ng-checked="isChecked(choiceValue.desc)" ng-true-value="'{{choiceValue.desc}}'" ng-false-value="null" choice-id="choiceValue.id"> {{choiceValue.desc}}
+			</div>
+		</div>
+</div>

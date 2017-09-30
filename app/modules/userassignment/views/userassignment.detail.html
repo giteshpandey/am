@@ -1,0 +1,26 @@
+<div ui-view="header"></div>
+<div class="container" ng-init="setAssignmentInScope()">
+  <span class="assignmentPanel-heading">Assignment Detail</span>
+</div>
+<div class="container-fluid top-border">
+  <div class="container">
+    <div class="middle bg-white">
+      <form>
+        <div class="form-group">
+          <label for="assignmentName">Assignment Name</label>
+          <label type="text" class="form-control" id="assignmentName">{{userAssignment.name}}</label>
+        </div>
+        <div class="form-group">
+          <label for="assignmentDescription">Description</label>
+          <label type="text" class="form-control" id="assignmentDescription">{{userAssignment.desc}}</label>
+        </div>
+        <div class="form-group">
+          <label for="assignmentDescription">Owner</label>
+          <label type="text" class="form-control" id="assignmentOwner">{{userAssignment.owner}}</label>
+        </div>        
+        <button type="submit" class="btn btn-default submit" ng-click="getOrTakeAssignment()">Take Assignment >></button>
+        <button type="submit" class="btn btn-default cancel" ui-sref="user-assignment">Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>

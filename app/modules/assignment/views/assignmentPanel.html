@@ -1,0 +1,6 @@
+<div ng-init="getAllAssignments()">
+	<create-new-assignment-box></create-new-assignment-box>
+	<div ng-repeat="assignment in allAssignments">
+		<available-assignment-box assignment="assignment"></available-assignment-box>
+	</div>
+</div>

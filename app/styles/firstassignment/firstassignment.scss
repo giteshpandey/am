@@ -1,0 +1,130 @@
+.first-assigment {
+	.header {
+	 
+		    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: table;
+    top: -15px;
+		.item {
+			padding: 5px;
+			display: block;
+			float: left;
+			background-color: #E3E3E3;
+			color: #333333;
+			width: 30px;
+			margin-right: 5px;
+			cursor: pointer;
+			text-align: center;
+			&.current {
+				background-color: #05a9e3;
+				color: #ffffff;
+			}
+			&.answered{
+			background-color: #5bb75b;
+				color: #ffffff;
+			}
+		}
+		p {
+			float: left;
+			padding: 5px;
+			text-align: left;
+			display: block;
+			font-size: 18px;
+		}
+	}
+}
+.questionary {
+	assignment-header {
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+	assignment-item {
+		padding: 30px;
+		width: 100%;
+		height: calc(100% - 380px);
+		border:1px solid #d3d3d3;
+		float: left;
+		margin-top: 30px;
+	}
+	assignment-footer {
+		width: 100%;
+		float: left;
+		    margin-top: 30px;
+		.next {
+			background-color: #05a9e3;
+			font-weight: bold;
+			color: #ffffff;
+			border: 0px;
+			border-radius: 0px;
+			width: 80px;
+		}
+		.prev {
+			background-color: #05a9e3;
+			font-weight: bold;
+			color: #ffffff;
+			border: 0px;
+			border-radius: 0px;
+			width: 80px;
+		}
+		.submit {
+			background-color: #05a9e3;
+			font-weight: bold;
+			color: #ffffff;
+			border: 0px;
+			border-radius: 0px;
+			width: 80px;
+		}
+	}
+	.question {
+		float: left;
+		width: 100%;
+		font-size: 24px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+	}
+	.choices {
+		float: left;
+		width: 100%;
+		margin-top: 50px;
+    display: block;
+	}
+}
+.result {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .user-name {
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+        color:#05a9e3;
+
+    }
+    .score {
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size:30px;
+    }
+    .percentage {
+        text-align: center;
+        font-size: 65px;
+        width: 200px;
+        height: 200px;
+        display: block;
+        color: #ffffff;
+        background: #5bb75b;
+        padding: 38px;
+        border-radius: 50%;
+        margin: auto;
+        line-height: 124px;
+    }
+}

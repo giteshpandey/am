@@ -1,0 +1,25 @@
+<div class="login-dropdown dropdown" >
+    <button ng-click="loginDropdown()" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login
+    <span class="caret"></span></button>
+    <div id="div-forms" ng-show="dropdownShowMe">
+        <form class="form-group" ng-submit="login()">
+            <div class="modal-body">
+                <div class="form-group">
+                <select class="form-control " ng-model="userType" ng-options="x for x in userTypes"></select>
+            </div>
+            <div ng-show="(userType === 'ADMIN' || userType === 'USER' ? true : false)" class="form-group">
+                <input type="text" id="soeId" ng-model="soeId" class="form-control input-lg" placeholder="Enter your SOE ID here...">
+            </div>
+            <div ng-show="(userType === 'ADMIN' ? true : false)" class="form-group">
+                <input type="password" id="password" ng-model="password" class="form-control input-lg" placeholder="Password">
+            </div>
+            <div ng-show="(userType === 'ADMIN' || userType === 'USER' ? true : false)" class="form-group">
+                <input type="submit" value="Sign In" class="btn btn-primary btn-lg sign-in btn-block">
+            </div>
+              <div class="loginResult">{{loginResult}}</div>
+        </div>
+    </form>
+  
+
+</div>
+</div>

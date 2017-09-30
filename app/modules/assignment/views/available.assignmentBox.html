@@ -1,0 +1,17 @@
+<div ng-class="assignment.status.toUpperCase() === 'PUBLISHED' ? 'details-container published' : 'details-container'"> 
+	<div class="panel panel-default">
+		<a ui-sref="edit-assignment" ng-click="setAssignment()">
+			<div class="panel-heading head-custom">
+				<div class="details-date">{{assignment.formattedDate}}</div>
+			</div>
+			<div class="panel-body">
+				<span class="status">{{assignment.status}}</span>
+				<span class="title-name">{{assignment.name}}</span>
+				<span class="description">{{assignment.desc | limitTo : 35 }}</span>
+				<div class="notification">					
+					<span class="message">{{assignment.owner}}</span>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>

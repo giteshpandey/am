@@ -1,0 +1,145 @@
+/* line 2, ../../../app/styles/firstassignment/firstassignment.scss */
+.first-assigment .header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: table;
+  top: -15px;
+}
+/* line 9, ../../../app/styles/firstassignment/firstassignment.scss */
+.first-assigment .header .item {
+  padding: 5px;
+  display: block;
+  float: left;
+  background-color: #E3E3E3;
+  color: #333333;
+  width: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 19, ../../../app/styles/firstassignment/firstassignment.scss */
+.first-assigment .header .item.current {
+  background-color: #05a9e3;
+  color: #ffffff;
+}
+/* line 23, ../../../app/styles/firstassignment/firstassignment.scss */
+.first-assigment .header .item.answered {
+  background-color: #5bb75b;
+  color: #ffffff;
+}
+/* line 28, ../../../app/styles/firstassignment/firstassignment.scss */
+.first-assigment .header p {
+  float: left;
+  padding: 5px;
+  text-align: left;
+  display: block;
+  font-size: 18px;
+}
+
+/* line 38, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-header {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+/* line 43, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-item {
+  padding: 30px;
+  width: 100%;
+  height: calc(100% - 380px);
+  border: 1px solid #d3d3d3;
+  float: left;
+  margin-top: 30px;
+}
+/* line 51, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-footer {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+/* line 55, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-footer .next {
+  background-color: #05a9e3;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  width: 80px;
+}
+/* line 63, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-footer .prev {
+  background-color: #05a9e3;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  width: 80px;
+}
+/* line 71, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary assignment-footer .submit {
+  background-color: #05a9e3;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  width: 80px;
+}
+/* line 80, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary .question {
+  float: left;
+  width: 100%;
+  font-size: 24px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+/* line 87, ../../../app/styles/firstassignment/firstassignment.scss */
+.questionary .choices {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  display: block;
+}
+
+/* line 94, ../../../app/styles/firstassignment/firstassignment.scss */
+.result {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 100, ../../../app/styles/firstassignment/firstassignment.scss */
+.result h1 {
+  text-align: center;
+  font-size: 40px;
+}
+/* line 104, ../../../app/styles/firstassignment/firstassignment.scss */
+.result .user-name {
+  text-align: center;
+  font-size: 40px;
+  width: 100%;
+  color: #05a9e3;
+}
+/* line 111, ../../../app/styles/firstassignment/firstassignment.scss */
+.result .score {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 30px;
+}
+/* line 117, ../../../app/styles/firstassignment/firstassignment.scss */
+.result .percentage {
+  text-align: center;
+  font-size: 65px;
+  width: 200px;
+  height: 200px;
+  display: block;
+  color: #ffffff;
+  background: #5bb75b;
+  padding: 38px;
+  border-radius: 50%;
+  margin: auto;
+  line-height: 124px;
+}
+
+/*# sourceMappingURL=firstassignment.css.map */

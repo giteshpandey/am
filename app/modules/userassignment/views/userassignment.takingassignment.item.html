@@ -1,0 +1,15 @@
+<div>
+	<div ng-repeat="(key, value) in assignment.assignmentItems"  ng-show="!showResult">
+		<div class="questionary" ng-show="showCurrentQues(key)">
+			<assignment-header item-tracker="itemTracker" items="assignment.assignmentItems"></assignment-header>
+			<assignment-item item="assignment.assignmentItems[key]" save-assignment-item-answer="saveAssignmentItemAnswer(itemAnswer, currentAssignmentItemKey)"></assignment-item>		
+			<assignment-footer current-assignment-item-key="{{key}}" enable-prev="enablePrev(key)" enable-next="enableNext(key)" enable-submit="enableSubmit(key)" show-and-set-prev-assignment-item="showAndSetPrevAssignmentItem(currentAssignmentItemKey)" show-and-set-next-assignment-item="showAndSetNextAssignmentItem(currentAssignmentItemKey)" submit-assignment="saveOrSubmitAssignmentProgress(isSubmit)"></assignment-footer>	
+		</div>
+	</div>
+	<div class="result" ng-show="showResult">
+        <h1>Congratulations ! <span class="user-name">{{userId}}</span></h1>        
+        <span class="score">Your Score</span>
+        <span class="percentage">{{scorePercentage}}</span>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div ui-view="header"></div>
+<div class="container">
+  <span class="assignmentPanel-heading">Create New Assignment</span>
+</div>
+<div class="container-fluid top-border">
+  <div class="container">
+    <div class="middle bg-white">
+      <form>
+        <div class="form-group">
+          <label for="assignmentName">Assignment Name</label>
+          <input ng-model="newAssignment.name" type="text" class="form-control" id="assignmentName" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="assignmentDescription">Description</label>
+          <input ng-model="newAssignment.desc" type="text" class="form-control" id="assignmentDescription" placeholder="Description">
+        </div>
+        <div class="form-group">
+          <label for="assignmentDescription">Owner</label>
+          <input ng-model="newAssignment.owner" type="text" class="form-control" id="assignmentDescription" placeholder="Description">
+        </div>        
+        <button type="submit" class="btn btn-default submit" ng-click="createNewAssignment()">Next >></button>
+        <button type="submit" class="btn btn-default cancel" ui-sref="admin">Cancel</button>
+      </form>
+    </div>
+  </div>
+</div>

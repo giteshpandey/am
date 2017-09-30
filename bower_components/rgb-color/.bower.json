@@ -1,0 +1,14 @@
+{
+  "name": "rgb-color",
+  "homepage": "https://github.com/ariutta/rgb-color",
+  "version": "2.1.1",
+  "_release": "2.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.1",
+    "commit": "7ce3d5849489fd3cc759a409868bde1e90c25202"
+  },
+  "_source": "https://github.com/ariutta/rgb-color.git",
+  "_target": "*",
+  "_originalSource": "ariutta/rgb-color"
+}

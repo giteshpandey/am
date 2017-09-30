@@ -1,0 +1,13 @@
+<div>
+	<div class="col-md-8 col-xs-12 align-pad-left">
+		<input type="text" class="form-control" placeholder="Option Value" ng-model="choice.desc">
+	</div>
+	<div class="col-md-2 col-xs-12 align-pad-right">
+		<div class="onoffswitch">
+			<div class="{{choice.isCorrect}}" ng-click="toggleOption()">{{choice.isCorrect}}</div>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-12 align-pad-right">
+	 <button type="button" class="form-control cancel" placeholder="Option Value" ng-click="deleteChoice()">Delete</button>
+	</div>
+</div>

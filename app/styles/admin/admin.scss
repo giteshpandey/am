@@ -1,0 +1,238 @@
+body {
+    // background-color: #E3E3E3;
+    .container {
+        width: 1220px;
+    }
+
+}
+.assignmentPanel-heading {
+    font-size: 28px;
+    color: #000000;
+    padding: 20px 0 15px;
+    float: left;
+    width: 100%;
+    .submit {
+        background-color: #05a9e3;
+        font-weight: bold;
+        color: #ffffff;
+        border: 0px;
+        border-radius: 0px;
+        display: block;
+        min-width: 106px;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+.alert-success{
+    float:left;
+    width:100%;
+        padding: 8px 12px;
+    border-radius: 0px;
+    a{
+    float:right;
+        font-weight: bold;
+    font-size: 14px;
+    }
+}
+.top-border {
+    border-top: 1px solid #d8dbde;
+    padding-top: 30px;
+    background-color: #f6f6f6;
+    .middle {
+        min-height: calc(100vh - 212px);
+        //box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        // border: 1px solid #666666;
+        //background: #f6f6f6;
+        float: left;
+        width: 100%;
+        padding: 0px;
+        .highlight {
+            margin: 0;
+         
+            .item-count {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .weightage {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .assignmentPanel-grid {
+                /*border: 1px solid blue;*/
+                
+                margin: auto;
+                align-items: center;
+                display: block;
+            }
+            div {
+                div {
+                    textarea.form-control {
+                        border-radius: 0px;
+                        outline: 0;
+                    }
+                }
+            }
+            .dropdown {
+                .form-group {
+                    .form-control {
+                        border-radius: 0px;
+                        outline: 0;
+                    }
+                }
+                &.align-pad-left {
+                    padding-right: 10px;
+                    padding-left: 0px;
+                }
+                &.align-pad-right {
+                    padding-right: 0px;
+                    padding-left: 10px;
+                }
+            }
+            assignment-item-option {
+                background-color: red;
+                .form-control {
+                    border-radius: 0px;
+                    outline: 0;
+                }
+                div {
+                    &.align-pad-left {
+                        padding-right: 10px;
+                        padding-left: 0px;
+                        margin-bottom: 10px;
+                    }
+                    &.align-pad-right {
+                        padding-right: 0px;
+                        padding-left: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .left {
+            width: 510px;
+            margin-right: 30px;
+            float: left;
+            .item-count{
+            font-weight:bold;
+            text-align:right;
+                width: 27px;
+    display: inline-block;
+            }
+            .weightage {
+            text-align:left;
+                width: 106px;
+    display: inline-block;
+    font-weight:bold;
+    float:right;
+            }
+        }
+        .right {
+            width: 590px;
+            float: right;
+            .item-count {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .weightage {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .assignmentPanel-grid {
+                /*border: 1px solid blue;*/
+                
+                margin: auto;
+                align-items: center;
+                display: block;
+            }
+            div {
+                div {
+                    textarea.form-control {
+                        border-radius: 0px;
+                        outline: 0;
+                    }
+                }
+            }
+            .dropdown {
+                .form-group {
+                    .form-control {
+                        border-radius: 0px;
+                        outline: 0;
+                    }
+                }
+                &.align-pad-left {
+                    padding-right: 10px;
+                    padding-left: 0px;
+                }
+                &.align-pad-right {
+                    padding-right: 0px;
+                    padding-left: 10px;
+                }
+            }
+            assignment-item-option {
+                background-color: red;
+                .form-control {
+                    border-radius: 0px;
+                    outline: 0;
+                }
+                div {
+                    &.align-pad-left {
+                        padding-right: 10px;
+                        padding-left: 0px;
+                        margin-bottom: 10px;
+                    }
+                    &.align-pad-right {
+                        padding-right: 0px;
+                        padding-left: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .form-group {
+            input {
+                border-radius: 0px;
+                outline: 0;
+            }
+        }
+        .btn {
+            //color: #ffffff;
+            border-radius: 0px;
+            outline: 0;
+        }
+        .submit {
+            background-color: #05a9e3;
+            font-weight: bold;
+            color: #ffffff;
+            border: 0px;
+            border-radius: 0px;
+        }
+        .cancel {
+            background-color: #3c4b59;
+            font-weight: bold;
+            color: #ffffff;
+            border: 0px;
+            border-radius: 0px;
+        }
+    }
+    .bg-white {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        background-color: #ffffff;
+        margin-bottom: 30px;
+        position: relative;
+        .highlight {
+            width: 360px;
+            float: right;
+            position: absolute;
+            right: 20;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .userassignment-bgwhite {
+        box-shadow: none;
+        background: none;
+        padding: 0px;
+    }
+}

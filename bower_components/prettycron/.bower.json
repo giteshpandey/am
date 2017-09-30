@@ -1,0 +1,14 @@
+{
+  "name": "prettycron",
+  "homepage": "https://github.com/azza-bazoo/prettycron",
+  "version": "0.10.0",
+  "_release": "0.10.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.10.0",
+    "commit": "a164ae0870c700e6969fdcce4511c5597aff832f"
+  },
+  "_source": "https://github.com/azza-bazoo/prettycron.git",
+  "_target": "~0.10.0",
+  "_originalSource": "prettycron"
+}

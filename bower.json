@@ -1,0 +1,51 @@
+{
+  "name": "asset-management",
+  "version": "0.0.0",
+  "author": "Gitesh",
+  "dependencies": {
+    "angular-schema-form": "~0.8.13",
+    "textAngular": "^1.5.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-resource": "^1.6.4",
+    "jquery": "2.2.0",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "fontawesome": "^4.5.0",
+    "isteven-angular-multiselect": "angular-multi-select#~4.0.0",
+    "angular-ui-grid": "~3.1.1",
+    "angular-touch": "~1.5.0",
+    "angular-animate": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "underscore": "~1.8.3",
+    "angular-underscore-module": "~1.0.3",
+    "angular-daterangepicker": "~0.2.2",
+    "highcharts": "highcharts-release#~4.2.3",
+    "angular-cookies": "~1.5.3",
+    "angular-spinner": "~0.8.1",
+    "angular-bootstrap": "~1.3.1",
+    "angular-schema-form-datepicker": "~0.4.0",
+    "jspdf": "1.0.272",
+    "canvg-gabelerner": "*",
+    "html2canvas": "0.5.0-beta1",
+    "later": "~1.2.0",
+    "prettycron": "~0.10.0",
+    "moment": "~2.13.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "asset-management",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "^1.6.4"
+  }
+}

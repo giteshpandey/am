@@ -1,0 +1,19 @@
+<div ui-view="header"></div>
+<div class="container" ng-init="initAssignment()">
+	<div class="assignmentPanel-heading">
+		<span>{{assignment.desc}}</span>
+		<button ng-show="assignment.status == 'COMPLETED' ? false : true" class="pull-right submit" ng-click="saveOrSubmitAssignmentProgress(false)">Save Progress</button>
+	</div>
+	<div class="alert alert-success" ng-show="assignmentProgressSaved">
+	<a href="javascript:void(0)" ng-click="resetAssignmentProgress()" aria-label="close">&times;</a>
+  		<strong>Success!</strong> Your assignment progress has been Saved.
+	</div>
+</div>
+
+<div class="container-fluid top-border">
+	<div class="container">
+		<div class="middle bg-white ">
+			<div ui-view="userAssignmentItemView"></div>
+		</div>
+	</div>
+</div>

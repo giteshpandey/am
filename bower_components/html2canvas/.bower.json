@@ -1,0 +1,20 @@
+{
+  "name": "html2canvas",
+  "description": "Screenshots with JavaScript",
+  "main": "dist/html2canvas.js",
+  "ignore": [
+    "tests",
+    ".travis.yml"
+  ],
+  "homepage": "https://github.com/niklasvh/html2canvas",
+  "version": "0.5.0-beta1",
+  "_release": "0.5.0-beta1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.0-beta1",
+    "commit": "6596231b33b73b2d9956616f7eab7aa38cfcb95d"
+  },
+  "_source": "https://github.com/niklasvh/html2canvas.git",
+  "_target": "0.5.0-beta1",
+  "_originalSource": "html2canvas"
+}

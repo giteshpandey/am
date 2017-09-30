@@ -1,0 +1,19 @@
+<!-- <div ng-class="userassignment.status.toUpperCase() === 'PUBLISHED' ? 'details-container published' : 'details-container'">  -->
+<div ng-class="getUserAssignmentStatusClass()"> 
+	<div class="panel panel-default">
+		<a ng-click="setUserAssignment()">
+			<div class="panel-heading head-custom">
+				<div class="details-date">{{userassignment.formattedDate}}</div>
+			</div>
+			<div class="panel-body">
+				<span class="status">{{userassignment.status}}</span>
+				<span class="title-name">{{userassignment.name}}</span>
+				<span class="description">{{userassignment.desc}}</span>
+				<div class="notification">
+					<!-- <img src="images/alert.png"> -->
+					<span class="message">Author: {{userassignment.owner}}</span>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>

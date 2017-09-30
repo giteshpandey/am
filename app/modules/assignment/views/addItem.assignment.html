@@ -1,0 +1,57 @@
+<div class="add-Item-assignment">
+  <div style="margin-bottom: 15px;">
+    <label >Description</label>
+    <div text-angular="text-angular" name="desc" ng-model="assignmentItem.item.desc" ta-disabled='disabled'></div>
+  </div>
+  <div>
+    <div class="dropdown col-md-8 col-xs-12 align-pad-left" >
+      <div class="form-group">
+        <label>Type</label>
+        <select class="form-control" ng-model="assignmentItem.item.itemType">
+          <option>Single Choice</option>
+          <option>Multi Choice</option>
+          <option>Text Input</option>
+        </select>
+      </div>
+    </div>
+    <div class="dropdown col-md-4 col-xs-12 align-pad-right">
+      <div class="form-group">
+        <button type="submit" style="width: 34px;text-align: center;
+        float: right; margin-top: 24px;" class="form-control submit" ng-click="createChoice()">
+        +
+        </button>
+      </div>
+    </div>
+    <div class="form-group"  ng-repeat="choice in assignmentItem.item.itemChoices">
+    <assignment-item-option choice="choice" all-choices = 'assignmentItem.item.itemChoices'></assignment-item-option>
+  </div>
+</div>
+<div ng-if="assignmentItem.item.itemChoices.length > 0" style=" border-top: 1px solid #E3E3E3; padding-top: 20px;
+  display: inline-block;
+  width: 100%;">
+  <div class="dropdown col-md-8 col-xs-12" style="padding-right: 10px; padding-left: 0px;" >
+    <div class="form-group" style="width: 100px;">
+      <label>Weightage</label>
+      <select class="form-control" title="Weightage" ng-options="weightOption for weightOption in itemWeightOptions" ng-model="assignmentItem.item.weightage">
+      </select>
+    </div>
+  </div>
+  <div>
+    <div class="col-md-2 col-xs-12" style="padding-left: 10px; padding-right: 0px;">
+      <div style="display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+      font-weight: bold; height: 20px;"></div>
+      <button type="submit" class="form-control submit" ng-click="saveAssignmentItem()">
+      Save
+      </button>
+    </div>
+    <div class="col-md-2 col-xs-12" style="padding-left: 10px; padding-right: 0px;">
+      <div style="display: inline-block; max-width: 100%; margin-bottom: 5px;
+      font-weight: bold; height: 20px;"></div>
+      <button type="submit" class="form-control cancel"  ng-click="deleteAssignmentItem()">
+      Delete
+      </button>
+    </div>
+  </div>
+</div>

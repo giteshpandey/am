@@ -1,0 +1,251 @@
+/* line 3, ../../../app/styles/admin/admin.scss */
+body .container {
+  width: 1220px;
+}
+
+/* line 8, ../../../app/styles/admin/admin.scss */
+.assignmentPanel-heading {
+  font-size: 28px;
+  color: #000000;
+  padding: 20px 0 15px;
+  float: left;
+  width: 100%;
+}
+/* line 14, ../../../app/styles/admin/admin.scss */
+.assignmentPanel-heading .submit {
+  background-color: #05a9e3;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  display: block;
+  min-width: 106px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* line 27, ../../../app/styles/admin/admin.scss */
+.alert-success {
+  float: left;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 0px;
+}
+/* line 32, ../../../app/styles/admin/admin.scss */
+.alert-success a {
+  float: right;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 38, ../../../app/styles/admin/admin.scss */
+.top-border {
+  border-top: 1px solid #d8dbde;
+  padding-top: 30px;
+  background-color: #f6f6f6;
+}
+/* line 42, ../../../app/styles/admin/admin.scss */
+.top-border .middle {
+  min-height: calc(100vh - 212px);
+  float: left;
+  width: 100%;
+  padding: 0px;
+}
+/* line 50, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight {
+  margin: 0;
+}
+/* line 53, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .item-count {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 57, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .weightage {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 61, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .assignmentPanel-grid {
+  /*border: 1px solid blue;*/
+  margin: auto;
+  align-items: center;
+  display: block;
+}
+/* line 70, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight div div textarea.form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 78, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .dropdown .form-group .form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 83, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .dropdown.align-pad-left {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+/* line 87, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight .dropdown.align-pad-right {
+  padding-right: 0px;
+  padding-left: 10px;
+}
+/* line 92, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight assignment-item-option {
+  background-color: red;
+}
+/* line 94, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight assignment-item-option .form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 99, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight assignment-item-option div.align-pad-left {
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+/* line 104, ../../../app/styles/admin/admin.scss */
+.top-border .middle .highlight assignment-item-option div.align-pad-right {
+  padding-right: 0px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 112, ../../../app/styles/admin/admin.scss */
+.top-border .middle .left {
+  width: 510px;
+  margin-right: 30px;
+  float: left;
+}
+/* line 116, ../../../app/styles/admin/admin.scss */
+.top-border .middle .left .item-count {
+  font-weight: bold;
+  text-align: right;
+  width: 27px;
+  display: inline-block;
+}
+/* line 122, ../../../app/styles/admin/admin.scss */
+.top-border .middle .left .weightage {
+  text-align: left;
+  width: 106px;
+  display: inline-block;
+  font-weight: bold;
+  float: right;
+}
+/* line 130, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right {
+  width: 590px;
+  float: right;
+}
+/* line 133, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .item-count {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 137, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .weightage {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 141, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .assignmentPanel-grid {
+  /*border: 1px solid blue;*/
+  margin: auto;
+  align-items: center;
+  display: block;
+}
+/* line 150, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right div div textarea.form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 158, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .dropdown .form-group .form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 163, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .dropdown.align-pad-left {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+/* line 167, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right .dropdown.align-pad-right {
+  padding-right: 0px;
+  padding-left: 10px;
+}
+/* line 172, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right assignment-item-option {
+  background-color: red;
+}
+/* line 174, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right assignment-item-option .form-control {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 179, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right assignment-item-option div.align-pad-left {
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+/* line 184, ../../../app/styles/admin/admin.scss */
+.top-border .middle .right assignment-item-option div.align-pad-right {
+  padding-right: 0px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 193, ../../../app/styles/admin/admin.scss */
+.top-border .middle .form-group input {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 198, ../../../app/styles/admin/admin.scss */
+.top-border .middle .btn {
+  border-radius: 0px;
+  outline: 0;
+}
+/* line 203, ../../../app/styles/admin/admin.scss */
+.top-border .middle .submit {
+  background-color: #05a9e3;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+}
+/* line 210, ../../../app/styles/admin/admin.scss */
+.top-border .middle .cancel {
+  background-color: #3c4b59;
+  font-weight: bold;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+}
+/* line 218, ../../../app/styles/admin/admin.scss */
+.top-border .bg-white {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 224, ../../../app/styles/admin/admin.scss */
+.top-border .bg-white .highlight {
+  width: 360px;
+  float: right;
+  position: absolute;
+  right: 20;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 233, ../../../app/styles/admin/admin.scss */
+.top-border .userassignment-bgwhite {
+  box-shadow: none;
+  background: none;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=admin.css.map */

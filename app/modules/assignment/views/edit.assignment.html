@@ -1,0 +1,20 @@
+<div ui-view="header"></div>
+<div class="container">
+	<div class="assignmentPanel-heading" ng-init="getNewAssignment()">
+		<span>{{newAssignment.name}}</span>
+		<button class="pull-right submit" ng-click="publishAssignment()">Publish</button>
+	</div>
+</div>
+
+<div class="container-fluid top-border">
+	<div class="container">
+		<div class="middle bg-white">
+			<div class="left">
+				<div ui-view="assignmentItems"></div>
+			</div>
+			<div class="right">
+				<div ui-view="addAssignmentItem"></div>
+			</div>
+		</div>
+	</div>
+</div>
