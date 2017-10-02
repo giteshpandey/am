@@ -17,6 +17,11 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
 
     $scope.choose_decompose=false;
     $scope.promt = "search stock";
+    $scope.alert = function(msg) {
+
+          alert(msg)
+
+    }
 
     if($scope.cache.hack == null){
         $scope.cache.hack = 1;
@@ -67,6 +72,12 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
       //     $timeout(function() {
       //           $state.go("forecast."+state)
       // }, 3000);
+
+    }
+
+
+    if(state == 'forecasting'){
+          $state.go("forecast."+state)
 
     }
 

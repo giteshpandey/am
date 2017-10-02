@@ -240,46 +240,18 @@ main.ng-enter-active {
 
 
 
-<div style="background-color:#152C37 ;width:100%;height: 100%">
-
-<div class="container" style="width:100%;padding:0" >
-<!-- 
-<div class="col-md-2" style="padding:0;background-color: #0D1C23;height: 100%;width=100%" > 
+<div class="container" style="background-color:#152C37 ;padding:0%;">
 
 
 
+<div class="row">
 
-  <div id="wrapper" class="active">  
-   <div id="sidebar-wrapper">
-        <ul id="sidebar_menu" class="sidebar-nav">
-           <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-        </ul>
-        <ul class="sidebar-nav" id="sidebar">
-          <li><a>Forecast Security<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-           <ul class="sidebar-nav" id="sidebar">
-                <li><a>Time series analysis<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                <li><a>Money Market<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-           </ul>
-          <li><a>Portfolio Optimiser<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-          <li><a>Derrivative analysis<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-        </ul>
-      </div>
-
-      </div>
+<div class="col-md-12  col-sm-12" style="border:thin solid #373748;padding:0">
 
 
 
 
- </div> -->
-<div class="col-md-12" style="border:thin solid #373748;padding:0">
-
- <!-- <div class=" page-header" style="margin-bottom: 10px;margin-top:-10px;padding-bottom: -8px !imp">
-    <h1  style ="color: white;font-size:16px;margin-left: 16px">Forecast Security</h1>
-   </div>
- -->
-
-
- <div class="row">
+<div class="row">
    
 <nav class="navbar navbar-default" style="background-color: white">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -302,94 +274,30 @@ main.ng-enter-active {
 
  </div>
 
-   <div class="row"  style="margin-left:0px; margin-right:0px;">
+   <div class="row" >
    <!--https://bootsnipp.com/snippets/featured/navbar-search-add-on-bs-3 -->
-      <nav class="navbar navbar-default" role="navigation" style="height: 26px;" >
-  <!-- Brand and toggle get grouped for better mobile display -->
- <!--  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-   </div> -->
+    <nav class="navbar navbar-default" role="navigation" style="height: 1.903%;" >
+
    <div  class="col-sm-4 col-md-4"></div>
-   <div class="col-sm-2 col-md-2" style="margin-left: 11px;    margin-top: 7px;">
-        <div class="input-group" style="margin-left:3px">
-              <typeahead items="stocks" prompt="promt" title="name" subtitle="abbreviation" model="cache.selected_stock" on-select="change_state('plot')" />        
+   <div class="col-sm-4 col-md-4" style="margin-top: .512%;">
+        <div style = "width: 100%; height:100%" class="input-group" >
+              <typeahead style="height:100%" items="stocks" prompt="promt" title="name" subtitle="abbreviation" model="cache.selected_stock" on-select="change_state('plot')" />        
         </div>
        
     </div>
 
-     <div class="col-sm-1 col-md-1" style="   margin-top: 7px;">
+     <div class="col-sm-1 col-md-1" style="margin-top: .512%;margin-left: -2.22%;">
 
-       <div class="input-group-btn" >
-                 <button style="height:34px;margin-top: 0px;margin-left: 145px;" class="btn btn-default" ng-click="change_state('plot')" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+       <div style = "height:100%" class="input-group-btn" >
+                 <button style="height:127%;margin-top:0%" class="btn btn-default" ng-click="change_state('plot')" type="submit"><i style="height:100%" class="glyphicon glyphicon-search"></i></button>
             </div>
 
-        </div>    
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" style="color: white" data-toggle="dropdown">Decomposition<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Classical-Additive </a></li>
-          <li class="divider"></li>
-          <li><a href="#">Classical-Multiplicative</a></li>
-          <li class="divider"></li>
-          <li><a href="#">X-12-ARIMA</a></li> 
-        </ul>
-      </li>
-    </ul>
-
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" style="color: white" data-toggle="dropdown">Algorithm<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Linear REgression</a></li>
-          <li class="divider"></li>
-          <li><a href="#">polynomial</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" style="color: white" data-toggle="dropdown">Graph <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Violin plot</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Scatter point</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Histogram</a></li>
-          <li class="divider"></li>
-         </ul>
-      </li>
-    </ul>
-    
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"  style="color: white">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" style="color: white" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse --> -->
-</nav>
-
-
+        </div>  
    </div>
 
-<div class="row" style="height: 400px;background-color: #152C37;margin-top: 5px;margin-right: 0px;margin-left: 0px;">
+<div class="row" style="height: 67%;background-color: #152C37;margin-top:.4%;margin-right: 0%;margin-left: 0%;">
     
-  <div  class="col-md-12" style="margin-top: 1px">
+  <div  class="col-md-12" style="margin-top: .130%">
     <div id="loaderDiv" loader>
         <img src="images/spin.svg" class="ajax-loader"/>
     </div> 
@@ -402,25 +310,20 @@ main.ng-enter-active {
  </div>
 
 
-  <div  class="row text-center" style=" margin-left: 0px;    margin-right: 0px;    color: white;"> 
-    <hr style=" border: 0px;
-            width: 1298px;
-            height: 1px;
-            background-color: white;margin-top: 44px;"/> 
+  <div  class="row text-center" style=" margin-left: 0%;    margin-right: 0%;    color: white;"> 
+    <hr style=" border: 0%;
+            width: 96%;
+            height: .-0.9%%;
+            background-color: white;margin-top: 3.3%;"/> 
 
     © 2017 ABC Corporation
     </div>
-
-
-
-
-</div>
-
 
         
    
 
 
+</div>
 
  
  </div>

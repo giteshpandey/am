@@ -1,72 +1,52 @@
-<!--      <div class="row" style="margin-top: -102px;margin-left: -132px;">
-      
-		     <div class="col-md-5" >
-		 	 	   <button  type="button" ng-click="go_back()" style="margin-top: 176px;background-color: #222222" class="btn btn-info btn-arrow-left">Back</button>
-   
-		     </div>
-
-		      <div class="col-md-2" >
-		 	 	   <div style="margin-top: 88px" ng-bind-html="cache.small_price_plot" ></div> 
-		     </div>
-
-
-		      <div class="col-md-5" >
-		 	 	  
-		     </div>
-                       
-     		  <button  ng-click="choose_decompose=true" type="button" style ="margin-left: -618px;
-							margin-top: 263px;
-							background-color: #222222;
-							-webkit-transform: rotate(90deg);
-							width: 48px;" class="btn btn-info btn-arrow-right">D</button>
-
-
-     
-
-      </div> -->	
 
 
 
-     <div class="row" style="margin-top: 20px;">
 
-      <div class="col-md-1" style="margin-left: -28px;margin-top: 58px;" >
+     <div class="row" style="margin-top: 1%;">
+
+      <div class="col-md-1" style="margin-left: -2%;margin-top: 6%;width:11.33%;overflow:hidden" >
 		 	 	   <div  ng-bind-html="cache.small_price_plot" ></div> 
 		 	
 	  </div>
 
 
-      <div class="col-md-1" style=" margin-top: 58px;" >
-		 	 	  <button  type="button" ng-click="go_back()" style="margin-top: 81px;
-margin-left: 51px;;background-color: #222222" class="btn btn-info btn-arrow-left">Back</button>
+     
+
+           <div class="col-md-1"  class="margin-left:.5%;" >
+		 	 	  <button  type="button" ng-click="change_state('forecasting');" style="margin-top: 180%;
+                     background-color: #222222;" class="btn btn-info btn-arrow-left">Back</button>
    
 		 	
-	  </div>
-
-
+	         </div>
 	   	 
       
-     		  <div class=" col-md-3" style="margin-left: 29px;" >
+      <div class = "col-md-9 col-sm-9" style="width:70%">
+
+     		<div class=" col-md-4"  style="overflow:hidden;    padding: 0%;">
  	 	  <div ng-bind-html="cache.trend_cycle" ></div> 
 
             </div>
 
 
 
-      <div class=" col-md-3" >
+      <div class=" col-md-4" style="overflow:hidden">
  	 	  <div ng-bind-html="cache.seasonality" ></div>  
 
      </div>
 
-         <div class=" col-md-3">
+         <div class=" col-md-4" style="overflow:hidden">
  	 	  <div ng-bind-html="cache.noise" ></div> 
 
       </div>
 
 
+      </div>
 
-           <div class="col-md-.5" style=" margin-top: 58px;" >
-		 	 	  <button  type="button" ng-click="" style="margin-top: 81px;
-                     margin-left: 15px;;background-color: #222222" class="btn btn-info btn-arrow-right">Next</button>
+
+
+           <div class="col-md-1"  >
+		 	 	  <button  type="button" ng-click="change_state('forecasting');" style="margin-top: 180%;
+                     background-color: #222222;" class="btn btn-info btn-arrow-right">Forecast</button>
    
 		 	
 	         </div>

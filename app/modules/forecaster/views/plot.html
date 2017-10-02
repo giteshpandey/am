@@ -9,61 +9,56 @@
 
 
 </style>  
-<div class="row" style="margin-left: -75px">
+<div class="row" style="margin-left: -3%;overflow:hidden">
       
 
 
-  <div class="col-sm-8 col-md-8">
+  <div class="col-sm-6 col-md-6" style="width: 44%;overflow:hidden">
  	 	  <div   ng-bind-html="cache.price_plot" ></div>
 
   </div>
 
-   <div class="col-sm-4 col-md-4">
- 	 	  <div  class="row" >
+   <div class="col-sm-2 col-md-2" style="margin-top:7%;overflow:hidden">
+ 	 	 
  	 	  	
- 	 	  	<div ng-show ="cache.price_plot"  ng-cloak class="col-sm-1 col-md-1 "  style="margin-left:-49px;">
- 	 	   <button ng-click="choose_decompose=true" type="button" style ="margin-left: -268px;margin-top: 113px;background-color: #222222;width: 168px" class="btn btn-info btn-arrow-right">Auto Forecast</button>
-
-
+ 	 	  <div ng-show ="cache.price_plot" style="overflow:hidden" ng-cloak  >
+ 	 	   <button ng-click="choose_decompose=true"  type="button" style="background-color: #222222;width: 89%;"  class="btn btn-info btn-arrow-right">Manual Forecast</button>
  	 	  </div>
- 	 	  </div>
+ 	 
 
- 	 	  	  <div  class="row" >
+ 	 	  	
  	 	  				
-     <div ng-show ="cache.price_plot"  ng-cloak class="col-sm-1 col-md-1 "  style="margin-left: -49px;">
- 	 	   <button ng-click="choose_decompose=true" type="button" style ="margin-left: -268px;margin-top: 103px;background-color: #222222;width: 168px;" class="btn btn-info btn-arrow-right">Manual Forecast</button>
-
-
-   </div>
+      <div ng-show ="cache.price_plot" style="overflow:hidden" ng-cloak  >
+ 	 	   <button  ng-click="alert('This feature will be implemented in next release ')" type="button" style ="background-color: grey;width: 89%;margin-top:69%" class="btn btn-info btn-arrow-right">Auto Forecast</button>
+     </div>
+  </div>
   
    
-  <div  ng-show ="choose_decompose"  class="col-sm-3 col-md-3 test" style="margin-left: -109px;" ng-cloak >
-
-  			   <div ng-show ="cache.price_plot"  ng-cloak class="col-sm-1 col-md-1 "  style="margin-left: -49px;">
- 	 	   <button ng-click="choose_decompose=true" type="button" style ="margin-left: 0px;margin-top: 103px;background-color: #222222;width: 149px;" class="btn btn-info btn-arrow-right">Decompose</button>
 
 
+
+    <div  ng-show ="choose_decompose"  style="margin-top:7%;margin-left:-3% ;overflow:hidden" class="col-sm-2 col-md-2 "  ng-cloak >
+
+  			   <div ng-show ="cache.price_plot"  ng-cloak  >
+ 	 	    <button ng-click="choose_decompose=true" type="button" style ="margin-top:2.9%;background-color: #222222;width: 89%;" class="btn btn-info btn-arrow-right">Decompose</button>
+               </div>	
    </div>
 
-        <button ng-click="change_state('decomposed','classical-additive');" type="button" class="btn btn-primary btn-sm" style="width: 216px;padding: 0px;margin-top: 80px; margin-left: 152px;margin-bottom: 7px;background-color: #222222;height: 37px"> Classical Decomposition-Additive</button>
-         <button ng-click="change_state('decomposed','classical-multiplicative');"  class="btn btn-primary btn-sm"  style="width: 216px;padding: 0px; margin-left: 152px;margin-bottom: 7px;background-color: #222222;height: 37px"> Classical Decomposition-Multiplicative</button>
+      <div  ng-show ="choose_decompose"  class="col-sm-3 col-md-3 " style="margin-top:11%">
+        <button ng-click="change_state('decomposed','classical-additive');" type="button" class="btn btn-primary btn-sm" style="width: 78%;margin-top: -36%;margin-bottom: 4%;background-color: #222222;height: 11%;overflow:hidden"> Classical Decomposition-Additive</button>
+          <button ng-click="change_state('decomposed','classical-multiplicative');" type="button" class="btn btn-primary btn-sm" style="width: 78%;margin-top: -19%;margin-bottom: 4%;background-color: #222222;height: 11%;overflow:hidden"> Classical Decomposition-Multiplicative</button>
+       
+          <button ng-click="alert('This feature will be implemented in next release ')" type="button" class="btn btn-primary btn-sm" style="width: 78%;margin-top: -2%;margin-bottom: 2%;background-color: grey;height:11%;overflow:hidden"> STL Decomposition</button>
 
-  </div> 
+           <button  ng-click="alert('This feature will be implemented in next release ')" type="button" class="btn btn-primary btn-sm" style="width: 78%;margin-top: 0%; margin-bottom: 4%;background-color: grey;height: 11%;overflow:hidden">X-12-ARIMA Decomposition</button>
+       	
+       
+      </div> 
 
  	 	  	
- 	 	  </div>
-
   </div>
 
-
-
  
- 
-      
-
-    
-</div>
-
 
 
 
