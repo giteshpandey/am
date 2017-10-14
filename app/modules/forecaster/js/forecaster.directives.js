@@ -15,7 +15,7 @@ forecasterDirectives.directive('typeahead', function($timeout) {
     },
     link: function(scope, elem, attrs) {
   scope.handleSelection = function(selectedItem) {
-    scope.model = selectedItem;
+    scope.model = selectedItem.symbol;
     scope.current = 0;
     scope.selected = true;
     $timeout(function() {

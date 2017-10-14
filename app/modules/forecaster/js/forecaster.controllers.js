@@ -9,11 +9,12 @@ cache.selected_stock=undefined;
 cache.states=[]
 cache.no_of_states=0
 cache.hack = null
+cache.decompose_algo =null
+cache.forecast=null
 forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'ForecastService','$sce','$state', 
                                                      function($timeout,$scope,ForecastService,$sce, $state){
 	$scope.cache = cache
-    $scope.stocks = undefined;
-    $scope.algo = null;
+    $scope.stocks = undefined;    
 
     $scope.choose_decompose=false;
     $scope.promt = "search stock";
@@ -55,28 +56,32 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
       cache.no_of_states++;
       cache.states[cache.no_of_states] = state;
     if(state == "plot"){
-        $scope.getPlot($scope.cache.selected_stock);
-        $scope.getSmallPlot($scope.cache.selected_stock);
+    	$scope.getSmallPlot($scope.cache.selected_stock,1.4,1.6);
+        $scope.getPlot($scope.cache.selected_stock,5.5,5);
+       
          $state.go("forecast."+state)
-      //   $timeout(function() {
-      //           $state.go("forecast."+state)
-      // }, 3000);
+      
       
 
     }
 
      if(state == "decomposed"){
-        $scope.algo =algo
-        $scope.decompose_security($scope.cache.selected_stock,$scope.algo)
+     	if(!(algo ==null || algo == undefined)){
+     		$scope.cache.algo =algo
+     	}
+        
+        $scope.decompose_security($scope.cache.selected_stock,$scope.cache.algo,2.4,3)
          $state.go("forecast."+state)
-      //     $timeout(function() {
-      //           $state.go("forecast."+state)
-      // }, 3000);
+ 
 
     }
 
 
     if(state == 'forecasting'){
+    	cache.trend_cycle=null
+        cache.seasonality=null
+       cache.noise = null
+    	  $scope.decompose_security($scope.cache.selected_stock,$scope.cache.algo,1.4,1.6)
           $state.go("forecast."+state)
 
     }
@@ -86,7 +91,7 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
 
 
 
-    $scope.getPlot = function(security) {
+    $scope.getPlot = function(security,x_length,y_length) {
         var success = function(response) {
             cache.price_plot =$sce.trustAsHtml(response.data);             
             
@@ -97,12 +102,12 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
             alert('problem occurred in creating new assignment');
         };
 
-        ForecastService.getPricePlot(security, success, failure);
+        ForecastService.getPricePlot(security,x_length,y_length, success, failure);
     }
 
 
 
-    $scope.getSmallPlot = function(security) {
+    $scope.getSmallPlot = function(security,x_length,y_length) {
         var success = function(response) {
             cache.small_price_plot =$sce.trustAsHtml(response.data);
            
@@ -112,7 +117,7 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
             alert('problem occurred in creating new assignment');
         };
 
-        ForecastService.getSmallPricePlot(security, success, failure);
+        ForecastService.getPricePlot(security,x_length,y_length, success, failure);
     }
 
 
@@ -135,7 +140,7 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
             alert('problem occurred in creating new assignment');
         };
 
-        ForecastService.getTrendMA(security, success, failure);
+        ForecastService.getTrendMA(security,3,3, success, failure);
     }
 
      $scope.getSeasonality = function(security) {
@@ -148,12 +153,12 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
             alert('problem occurred in creating new assignment');
         };
 
-        ForecastService.getSeasonality(security, success, failure);
+        ForecastService.getSeasonality(security,3,3, success, failure);
          
     
     }
 
-      $scope.decompose_security = function(security,algo) {
+      $scope.decompose_security = function(security,algo,x_length,y_length) {
         var success = function(response) {
             cache.trend_cycle =$sce.trustAsHtml(response.data[0]);
             cache.seasonality =$sce.trustAsHtml(response.data[1]);
@@ -164,9 +169,26 @@ forecasterControllers.controller('ForecastCntrl', ['$timeout','$scope', 'Forecas
             alert('problem occurred in creating new assignment');
         };
 
-        ForecastService.decompose_security(security,algo, success, failure);
+        ForecastService.decompose_security(security,algo,x_length,y_length, success, failure);
          
     
+    }
+
+
+    $scope.forecast = function(algo){
+           var success = function(response) {
+            cache.forecast =$sce.trustAsHtml(response.data);
+          
+        };
+
+        var failure = function() {
+            alert('problem occurred in creating new assignment');
+        };
+
+        ForecastService.forecast($scope.cache.selected_stock,algo,3.5,3.5, success, failure);
+    
+
+
     }
 
 
